@@ -6,10 +6,7 @@ import { Component, OnInit, QueryList, ViewChildren } from '@angular/core';
   styleUrls: ['./auto-input.page.scss'],
 })
 export class AutoInputPage implements OnInit {
-  // @ViewChild('inputs') inputs;
- 
   @ViewChildren('inputs') inputs: QueryList<any>;
-
   
   constructor() {
     setTimeout(res=>{
