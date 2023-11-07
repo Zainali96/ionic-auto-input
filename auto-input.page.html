@@ -1,27 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>auto-input</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
+<ion-content>
   <div class="container ion-text-center">
     <h3>Verfication Code</h3>
     <p>Please type the verification code sent to +49 4921 801 850 0</p>
     <ion-row>
       <ion-col>
-        <ion-input #inputs id=1 type="tel" maxlength="1" (ionInput)="checkInput(1)"></ion-input>
+        <ion-input #inputs type="tel" maxlength="1" (ionInput)="checkInput(1)"></ion-input>
       </ion-col>
       <ion-col>
-        <ion-input #inputs id=2 type="tel" maxlength="1" (ionInput)="checkInput(2)"></ion-input>
+        <ion-input #inputs type="tel" maxlength="1" (ionInput)="checkInput(2)"></ion-input>
       </ion-col>
       <ion-col>
-        <ion-input #inputs id=3 type="tel" maxlength="1" (ionInput)="checkInput(3)"></ion-input>
+        <ion-input #inputs type="tel" maxlength="1" (ionInput)="checkInput(3)"></ion-input>
       </ion-col>
       <ion-col>
-        <ion-input #inputs id=4 type="tel" maxlength="1" (ionInput)="checkInput(4)"></ion-input>
+        <ion-input #inputs type="tel" maxlength="1" (ionInput)="checkInput(4)"></ion-input>
       </ion-col>
-
     </ion-row>
+    <ion-button expand="full">Verify</ion-button>
   </div>
 </ion-content>
