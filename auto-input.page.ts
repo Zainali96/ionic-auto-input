@@ -15,10 +15,23 @@ export class AutoInputPage implements OnInit {
   }
 
   checkInput(id:any){
-    console.log('id',id);
-    console.log('inputs',this.inputs['_results']);
-    if(id < 4){
-    this.inputs['_results'][id].setFocus();
+    if(id > 0 && this.inputs['_results'][id - 1].value.length == 0){
+      if(id != this.inputs['_results'].length && this.inputs['_results'][id ].value.length > 0){
+        for(let i = 0; i<this.inputs['_results'].length; i++){
+          this.inputs['_results'][i].value = '';
+        }
+        this.inputs['_results'][0].setFocus();
+      }else{
+        if(id > 1){
+          this.inputs['_results'][id - 2].setFocus();
+        }else{
+          this.inputs['_results'][0].setFocus();
+        }
+      }
+    }else{
+      if(id < this.inputs['_results'].length){
+        this.inputs['_results'][id].setFocus();
+      }
     }
   }
 
