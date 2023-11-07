@@ -17,7 +17,7 @@ export class AutoInputPage implements OnInit {
   checkInput(id:any){
     // Set focus on previous input
     if(id > 0 && this.inputs['_results'][id - 1].value.length == 0){ 
-      if(id != this.inputs['_results'].length && this.inputs['_results'][id ].value.length > 0){
+      if(id != this.inputs['_results'].length && this.inputs['_results'][id].value.length > 0){
         for(let i = 0; i<this.inputs['_results'].length; i++){
           this.inputs['_results'][i].value = '';
         }
