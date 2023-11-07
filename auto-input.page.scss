@@ -1,9 +1,12 @@
 .container{
     width: 80%;
-    margin: 0 auto;
+    margin: 150px auto;
 }
 ion-input{
     min-height: 55px !important;
     --background:#595959;
     --border-radius:8px;
+}
+ion-button{
+    margin-top:50px;
 }
