@@ -26,9 +26,3 @@ export class AutoInputPage implements OnInit {
   }
 
 }
-// var dom = document.getElementById("key"+i);
-//     var ml = dom.maxLength;
-//     var lg = dom.value.length;
-//     if (lg >= ml) {
-//         document.getElementById("key"+(i+1)).focus()
-//     }
